@@ -178,6 +178,8 @@ namespace LiveSplit.UI.Components
             cmbSegmentDigitsFormat.DataBindings.Add("SelectedItem", this, "SegmentDigitsFormat", false, DataSourceUpdateMode.OnPropertyChanged);
             cmbSegmentAccuracy.DataBindings.Add("SelectedItem", this, "SegmentAccuracy", false, DataSourceUpdateMode.OnPropertyChanged);
             cmbTimingMethod.DataBindings.Add("SelectedItem", this, "TimingMethod", false, DataSourceUpdateMode.OnPropertyChanged);
+            this.cmbDigitsFormat.Items.AddRange(FormatUtils.StringsDict.Values.ToArray());
+            cmbSegmentDigitsFormat.Items.AddRange(FormatUtils.StringsDict.Values.ToArray());
         }
 
         void cmbTimingMethod_SelectedIndexChanged(object sender, EventArgs e)
@@ -447,6 +449,12 @@ namespace LiveSplit.UI.Components
             dialog.FontChanged += (s, ev) => SplitNameFont = ((CustomFontDialog.FontChangedEventArgs)ev).NewFont;
             dialog.ShowDialog(this);
             lblSplitNameFont.Text = SplitNameFontString;
+        }
+
+
+        private void formatStringsBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

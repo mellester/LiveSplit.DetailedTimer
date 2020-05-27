@@ -454,11 +454,6 @@
             this.cmbDigitsFormat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbDigitsFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDigitsFormat.FormattingEnabled = true;
-            this.cmbDigitsFormat.Items.AddRange(new object[] {
-            "1",
-            "00:01",
-            "0:00:01",
-            "00:00:01"});
             this.cmbDigitsFormat.Location = new System.Drawing.Point(147, 115);
             this.cmbDigitsFormat.Name = "cmbDigitsFormat";
             this.cmbDigitsFormat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -599,11 +594,6 @@
             this.cmbSegmentDigitsFormat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbSegmentDigitsFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSegmentDigitsFormat.FormattingEnabled = true;
-            this.cmbSegmentDigitsFormat.Items.AddRange(new object[] {
-            "1",
-            "00:01",
-            "0:00:01",
-            "00:00:01"});
             this.cmbSegmentDigitsFormat.Location = new System.Drawing.Point(147, 62);
             this.cmbSegmentDigitsFormat.Name = "cmbSegmentDigitsFormat";
             this.cmbSegmentDigitsFormat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
